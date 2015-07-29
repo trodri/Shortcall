@@ -1,0 +1,4 @@
+Welcome to Shortcall
+----------------
+
+This readme file's goal is to provide some quick information on the project.

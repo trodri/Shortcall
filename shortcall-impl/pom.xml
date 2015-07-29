@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.srm.shortcall</groupId>
+		<artifactId>shortcall</artifactId>
+		<version>0.1</version>
+	</parent>
+	<artifactId>shortcall-impl</artifactId>
+	<name>Shortcall Impl</name>
+	<description>Shortcall Engine Implementation</description>
+
+	<dependencies>
+		<dependency>
+			<artifactId>shortcall-wb</artifactId>
+			<groupId>com.srm.shortcall</groupId>
+			<version>0.1</version>
+		</dependency>
+		<dependency>
+			<artifactId>shortcall-dao</artifactId>
+			<groupId>com.srm.shortcall</groupId>
+			<version>0.1</version>
+		</dependency>
+		<!-- Quartz framework -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.8.6</version>
+		</dependency>
+		<!-- Spring mail -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+	</dependencies>
+</project>
